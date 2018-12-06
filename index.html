@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Calculator</title>
+  <meta charset="UTF-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Calculator</h1>
+    </div>
+    <div id="calc-form">
+      <form id="option">
+        <div class="form-group"> <label for="num1">1st number:</label> <input id="num1" class="form-control" type="text">
+        </div>
+        <div class="form-group"> <label for="num2">2nd number:</label> <input id="num2" class="form-control" type="text">
+        </div>
+        <p>
+          <select id="operation">
+            <option value="add">Add</option>
+            <option value="subtract">Substract</option>
+            <option value="multiply">Multiply</option>
+            <option value="divide">Divide</option>
+          </select>
+        </p>
+        <button type="submit" class="btn">Submit!</button>
+      </form>
+    </div>
+    <div id="output"> </div>
+  </div>
+</body>
+
+</html>
