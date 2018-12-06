@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Calculator</title>
+  <title>Quiz Board</title>
   <meta charset="UTF-8">
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -15,26 +15,55 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Calculator</h1>
+      <h1>Quiz Board</h1>
     </div>
-    <div id="calc-form">
-      <form id="option">
-        <div class="form-group"> <label for="num1">1st number:</label> <input id="num1" class="form-control" type="text">
-        </div>
-        <div class="form-group"> <label for="num2">2nd number:</label> <input id="num2" class="form-control" type="text">
-        </div>
-        <p>
-          <select id="operation">
-            <option value="add">Add</option>
-            <option value="subtract">Substract</option>
-            <option value="multiply">Multiply</option>
-            <option value="divide">Divide</option>
-          </select>
-        </p>
+    <div id="quiz-form">
+      <form id="quiz">
+        
+      <div id="questions">
+
+       <div class="radio">
+            <label> Inside which HTML element do we put JavaScript?
+               <input type="radio" name="script" value="script">&#60;script&#62;</input>
+               <input type="radio" name="scripting" value="scripting>">&#60;scripting&#62;</input>
+               <input type="radio" name="javascript" value="javascript">&#60;javascript&#62;</input>
+            </label>
+      </div>
+      <div class="radio">
+           <label> Which of the following is true about jQuery?
+               <input type="radio" name="java" value="java">jQuery is a Java library </input>
+               <input type="radio" name="javascript" value="javascript">jQuery is a JavaScript library> </input>
+               <input type="radio" name="html" value="html">jQuery is a HTML library> </input>
+            </label>
+      </div>
+      <div class="radio">
+           <label> What does HTML stand for?
+               <input type="radio" name="html" value="script">Hypertext Markup Language</input>
+               <input type="radio" name="html2" value="html2">Hyperlink Markup Language</input>
+               <input type="radio" name="html3" value="html3">Hypercube Markup Language</input>
+            </label>
+      </div>
+      <p>
+      <div class="radio">
+           <label> Which class provides a full width container?
+               <input type="radio" name="container" value="container">.container</input>
+               <input type="radio" name="fluid" value="fluid">.container-fluid</input>
+               <input type="radio" name="fixed" value="fixed">.container-fixed</input>
+            </label>
+      </div>
+      <div class="radio">
+           <label> What does CSS stand for?
+               <input type="radio" name="cascading" value="cascading">Cascading Style Sheets</input>
+               <input type="radio" name="colorful" value="colorful">Colorful Style Sheets</input>
+               <input type="radio" name="creative" value="creative">Creative Style Sheets</input>
+            </label>
+      </div>
+
+          <p></p>
         <button type="submit" class="btn">Submit!</button>
       </form>
     </div>
-    <div id="output"> </div>
+    
   </div>
 </body>
 
