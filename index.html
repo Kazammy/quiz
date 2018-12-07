@@ -8,101 +8,90 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </head>
 
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="jumbotron">
-          <h1>Quiz Board</h1>
-        </div>
-        <div id="quiz-form">
-          <form id="quiz">
-            <div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="radio">
-                    <label> Inside which HTML element do we put JavaScript?
-                      <input type="radio" name="script" value="script">
-                      &#60;script&#62;</input>
-                      <input type="radio" name="scripting" value="scripting>">
-                      &#60;scripting&#62;</input>
-                      <input type="radio" name="javascript" value="javascript">
-                      &#60;javascript&#62;</input>
-                    </label>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="radio">
-                      <label> Which of the following is true about jQuery?
-                        <input type="radio" name="java" value="java">
-                        jQuery is a Java library </input>
-                        <input type="radio" name="javascript" value="javascript">
-                        jQuery is a JavaScript library>
-                        </input>
-                        <input type="radio" name="html" value="html">
-                        jQuery is a HTML library> </input>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="radio">
-                      <label> What does HTML stand for?
-                        <input type="radio" name="html" value="script">
-                        Hypertext Markup Language</input>
-                        <input type="radio" name="html2" value="html2">
-                        Hyperlink Markup Language</input>
-                        <input type="radio" name="html3" value="html3">
-                        Hypercube Markup Language</input>
-                      </label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="radio">
-                      <label> Which class provides a full width container?
-                        <input type="radio" name="container" value="container">
-                        .container</input>
-                        <input type="radio" name="fluid" value="fluid">
-                        .container-fluid</input>
-                        <input type="radio" name="fixed" value="fixed">
-                        .container-fixed</input>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="radio">
-                        <label> What does CSS stand for?
-                          <input type="radio" name="cascading" value="cascading">
-                          Cascading Style Sheets</input>
-                          <input type="radio" name="colorful" value="colorful">
-                          Colorful Style Sheets</input>
-                          <input type="radio" name="creative" value="creative">
-                          Creative Style Sheets</input>
-                        </label>
-                      </div>
-                      <div>
-
-                      </div>
-
-                      <div class="row">
-                        <div class="col-md-12">
-                          <button type="submit" class="btn">Submit!</button>
-                        </div>
-                      </div>
-          </form>
+<body> 
+  <div class="container rounded" style="border:1px solid black"> 
+    
+      <div class="row">
+        <div class="col-md-12">
+          <div class="jumbotron">
+            <h1>Quiz Board</h1>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</body>
 
-</html>
+    
+
+      <div id="quiz-form" class="centered">
+
+        <form id="quiz">
+
+          <div class="row">
+
+            <div class="radio">
+              <p><label> 1. Inside which HTML element do we put JavaScript?
+                <p><input type="radio" name="script" value="script"> &#60;script&#62;</input></p>
+                <p><input type="radio" name="scripting" value="scripting>"> &#60;scripting&#62;</input></p>
+                <p><input type="radio" name="javascript" value="javascript"> &#60;javascript&#62;</input></p>
+              </label></p>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="radio">
+              <p><label> 2. Which of the following is true about jQuery?</p>
+                <p><input type="radio" name="java" value="java"> jQuery is a Java library</input></p>
+                <p><input type="radio" name="javascript" value="javascript"> jQuery is a JavaScript library></input></p>
+                <p><input type="radio" name="html" value="html"> jQuery is a HTML library> </input></p>
+              </label></p>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="radio">
+              <p><label> 3. What does HTML stand for?
+                <p><input type="radio" name="html" value="script"> Hypertext Markup Language</input></p>
+                <p><input type="radio" name="html2" value="html2"> Hyperlink Markup Language</input></p>
+                <p><input type="radio" name="html3" value="html3"> Hypercube Markup Language</input></p>
+              </label></p>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="radio">
+              <p><label> 4. Which class provides a full width container?
+                <p><input type="radio" name="container" value="container"> .container</input></p>
+                <p><input type="radio" name="fluid" value="fluid"> .container-fluid</input></p>
+                <p><input type="radio" name="fixed" value="fixed"> .container-fixed</input></p>
+              </label></p>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="radio">
+              <p><label> 5. What does CSS stand for?
+                <p><input type="radio" name="cascading" value="cascading"> Cascading Style Sheets</input></p>
+                <p><input type="radio" name="colorful" value="colorful"> Colorful Style Sheets</input></p>
+                <p><input type="radio" name="creative" value="creative"> Creative Style Sheets</input></p>
+              </label></p>
+            </div>
+          </div>
+          
+          <div class="row">
+
+            <p><button type="submit" class="btn">Submit!</button></p>
+
+          </div>   
+
+        </form>
+      </div>
+    </div>
+  </body>
+  </html>

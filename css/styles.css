@@ -1,3 +1,14 @@
-#story {
-  display: none;
+html, body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.rounded {
+  border-radius:.25rem!important
+}
+
+.centered {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 50px;
 }
