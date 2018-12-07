@@ -1,14 +1,28 @@
 html, body {
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.rounded {
-  border-radius:.25rem!important
+  font-family: sans-serif;
 }
 
 .centered {
   display: table-cell;
   vertical-align: middle;
   padding-left: 50px;
+}
+
+.rounded {
+  border-radius:.25rem!important
+}
+
+.container{
+  position: absolute;
+}
+
+.container-color{
+
+  background-color:lavenderblush;
+}
+
+.container-border{
+
+  border:1px solid grey;
 }
