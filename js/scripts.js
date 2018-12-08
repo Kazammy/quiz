@@ -82,15 +82,19 @@ $(document).ready(function() {
     if (!$('[name="q1"]').is(':checked') || !$('[name="q2"]').is(':checked') || !$('[name="q3"]').is(':checked') || !$('[name="q4"]').is(':checked') || !$('[name="q5"]').is(':checked')){
 
       alert("Kindly answer all questions!");
+    }
 
-   }
-    else{
+   });
 
+   $("form#quiz").submit(function(event) {
 
-      if ($('[name="q1"]').is(':checked')){
+		event.preventDefault();
 
-        if ($('[name="q1"]').val() === 'script') {
-          total += 10;
+    if ($('[name="q1"]').is(':checked')){
+
+      if ($('[name="q1"]').val() === 'script') {
+        total += 10;
+      
         }
       }
 
@@ -129,9 +133,6 @@ $(document).ready(function() {
       $("#score").text("Your score is: "+ total);
       $("#quiz-form-result").show();
 
-  }
-
-
   });
 
-}); 
+});
