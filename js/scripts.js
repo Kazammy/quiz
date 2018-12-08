@@ -1,17 +1,8 @@
 $(document).ready(function() {
   
-  var total = 0;
+    var total = 0;
   
-   $("button#green").click(function() {
-
-    if (!$('[name="q1"]').is(':checked') || !$('[name="q2"]').is(':checked') || !$('[name="q3"]').is(':checked') || !$('[name="q4"]').is(':checked') || !$('[name="q5"]').is(':checked')){
-
-      alert("Kindly answer all questions!");
-    }
-
-   });
-
-   $("form#quiz").submit(function(event) {
+    $("form#quiz").submit(function(event) {
 
 		event.preventDefault();
 
