@@ -13,6 +13,7 @@ This is a simple page that allows you to select using radio buttons the correct 
 * You are provided with a single page with a list of multiple choice questions. 
 * Each question is followed by three radio buttons of answer choices to select from. 
 * Click on each of the radio buttons that you believe has the right answer and move on to the next question.
+* Each question is worth 10 points. Since there are only five questions, a perfect score on the quiz is worth 50 points.
 * Once you have answered all questions, click submit.
 * The questions on the page will disappear and you will be provided with your overrall score on the quiz on the same page.
 
