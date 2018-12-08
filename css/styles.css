@@ -1,3 +1,11 @@
 #quiz-form-result {
   display: none;
 }
+
+#main {
+  background: lightblue;
+}
+
+#margin{
+  background: lightcoral;
+}
