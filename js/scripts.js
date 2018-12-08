@@ -1,9 +1,7 @@
 $(document).ready(function() {
   
   var total = 0;
-  $("#quiz").show();
-  $("#quiz-form-result").hide();
-
+  
   /*
   
   $("input:radio[name=q1]").change(function () {
