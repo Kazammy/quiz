@@ -31,7 +31,7 @@ This is a simple page that allows you to select using radio buttons the correct 
 
 ## Accessing the Application
 
-* To access the web application visit the following link: https://thalesian.github.io/triangle
+* To access the web application visit the following link: https://thalesian.github.io/quiz
 
 ## Known Bugs
 There are no known bugs. If you do find a bug, please feel free to report it
