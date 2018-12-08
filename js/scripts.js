@@ -2,80 +2,7 @@ $(document).ready(function() {
   
   var total = 0;
   
-  /*
-  
-  $("input:radio[name=q1]").change(function () {
-
-     if ($('[name="q1"]').is(':checked')){
-      
-      if(this.value == 'script' ) {
-        
-        total += 10;
-      }
-
-     }
-        
-    $("#score").text("Running Score: "+ total);
-
-  });
-
-
-  $("input:radio[name=q2]").change(function () { 
-
-    if ($('[name="q2"]').is(':checked')){
-      if(this.value == 'java-script') {
-        total += 10;
-      }
-    }
-    
-    $("#score").text("Running Score: "+ total);
-
-
-  });
-
-
-  $("input:radio[name=q3]").change(function () {
-    if ($('[name="q3"]').is(':checked')){
-      if(this.value == 'html') {
-        total += 10;
-      }
-    }
-    
-    $("#score").text("Running Score: "+ total);
-
-
-  });
-
-
-  $("input:radio[name=q4]").change(function () {
-
-    if ($('[name="q4"]').is(':checked')){
-      if(this.value == 'container') {
-        total += 10;
-      }
-    }
-    
-    $("#score").text("Running Score: "+ total);
-
-
-  });
-
-
-  $("input:radio[name=q5]").change(function () {
-
-    if ($('[name="q5"]').is(':checked')){
-      if(this.value == 'cascading') {
-        total += 10;
-      }
-    }
-    
-    $("#score").text("Running Score: "+ total);
-
-
-  });
-*/
-
-  $("button#green").click(function() {
+   $("button#green").click(function() {
 
     if (!$('[name="q1"]').is(':checked') || !$('[name="q2"]').is(':checked') || !$('[name="q3"]').is(':checked') || !$('[name="q4"]').is(':checked') || !$('[name="q5"]').is(':checked')){
 
@@ -126,7 +53,6 @@ $(document).ready(function() {
         }
       }
 
-      alert(total);
       $("#quiz").hide();
       $("#score").text("Your score is: "+ total);
       $("#quiz-form-result").show();

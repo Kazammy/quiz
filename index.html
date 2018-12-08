@@ -19,14 +19,11 @@
       <div class="col-md-12">
         <div class="jumbotron">
           <h1>Quiz Board</h1>
-          <!--<p><span class="label label-default" id="score"> Running Score: </span><strong></p>-->
         </div>
       </div>
     </div>
 
-
-
-    <div id="quiz-form-result">
+   <div id="quiz-form-result">
 
         <div class="row">
             <div class="col-md-12">
@@ -39,96 +36,94 @@
           </div>
       </div>
     </div>
+ <div>
 
-    <div>
+<form id="quiz">
 
-      <form id="quiz">
+<!-- Question 1-->
 
-        <!-- Question 1-->
-
-        <div class="row">
-          <div class="col-md-12">
-            <div class="panel panel-info">
-              <div class="panel-heading">Question 1</div>
-              <div class="panel-body">
-                <p><label> 1. Inside which HTML element do we put JavaScript?
-                    <p><input type="radio" name="q1" value="script"> &#60;script&#62;</input></p>
-                    <p><input type="radio" name="q1" value="scripting"> &#60;scripting&#62;</input></p>
-                    <p><input type="radio" name="q1" value="javascript"> &#60;javascript&#62;</input></p>
-                  </label></p>
-              </div>
-            </div>
-
-            <!-- Question 2-->
-
-            <div class="row">
-              <div class="col-md-12">
-                <div class="panel panel-info">
-                  <div class="panel-heading">Question 2</div>
-                  <div class="panel-body">
-                    <p><label> 2. Which of the following is true about jQuery?</p>
-                    <p><input type="radio" name="q2" value="java-script"> jQuery is a JavaScript library</input></p>
-                    <p><input type="radio" name="q2" value="java-library"> jQuery is a Java library</input></p>
-                    <p><input type="radio" name="q2" value="html-library"> jQuery is a HTML library</input></p>
-                    </label></p>
-                  </div>
-                </div>
-
-                <!-- Question 3-->
-
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="panel panel-info">
-                      <div class="panel-heading">Question 3</div>
-                      <div class="panel-body">
-                        <p><label> 3. What does HTML stand for?
-                            <p><input type="radio" name="q3" value="html"> Hypertext Markup Language</input></p>
-                            <p><input type="radio" name="q3" value="html2"> Hyperlink Markup Language</input></p>
-                            <p><input type="radio" name="q3" value="html3"> Hypercube Markup Language</input></p>
-                          </label></p>
-                      </div>
-                    </div>
-
-
-                    <!-- Question 4-->
-
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="panel panel-info">
-                          <div class="panel-heading">Question 4</div>
-                          <div class="panel-body">
-                            <p><label> 4. Which class provides a full width container?
-                                <p><input type="radio" name="q4" value="container"> .container</input></p>
-                                <p><input type="radio" name="q4" value="fluid"> .container-fluid</input></p>
-                                <p><input type="radio" name="q4" value="fixed"> .container-fixed</input></p>
-                              </label></p>
-                          </div>
-                        </div>
-
-                        <!-- Question 5-->
-
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="panel panel-info">
-                              <div class="panel-heading">Question 5</div>
-                              <div class="panel-body">
-                                <p><label> 5. What does CSS stand for?
-                                    <p><input type="radio" name="q5" value="cascading"> Cascading Style Sheets</input></p>
-                                    <p><input type="radio" name="q5" value="colorful"> Colorful Style Sheets</input></p>
-                                    <p><input type="radio" name="q5" value="creative"> Creative Style Sheets</input></p>
-                                  </label></p>
-                              </div>
-                              <!--Submit Button-->
-                              <div class="panel-footer">
-                                <p><button type="submit" class="btn btn-success" id="green">Submit</button></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-      </form>
+<div class="row">
+<div class="col-md-12">
+  <div class="panel panel-info">
+    <div class="panel-heading">Question 1</div>
+    <div class="panel-body">
+      <p><label> 1. Inside which HTML element do we put JavaScript?
+          <p><input type="radio" name="q1" value="script"> &#60;script&#62;</input></p>
+          <p><input type="radio" name="q1" value="scripting"> &#60;scripting&#62;</input></p>
+          <p><input type="radio" name="q1" value="javascript"> &#60;javascript&#62;</input></p>
+        </label></p>
     </div>
-   </div>
   </div>
-</body>
 
+  <!-- Question 2-->
+
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-info">
+        <div class="panel-heading">Question 2</div>
+        <div class="panel-body">
+          <p><label> 2. Which of the following is true about jQuery?</p>
+          <p><input type="radio" name="q2" value="java-script"> jQuery is a JavaScript library</input></p>
+          <p><input type="radio" name="q2" value="java-library"> jQuery is a Java library</input></p>
+          <p><input type="radio" name="q2" value="html-library"> jQuery is a HTML library</input></p>
+          </label></p>
+        </div>
+      </div>
+
+    <!-- Question 3-->
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">Question 3</div>
+          <div class="panel-body">
+            <p><label> 3. What does HTML stand for?
+                <p><input type="radio" name="q3" value="html"> Hypertext Markup Language</input></p>
+                <p><input type="radio" name="q3" value="html2"> Hyperlink Markup Language</input></p>
+                <p><input type="radio" name="q3" value="html3"> Hypercube Markup Language</input></p>
+              </label></p>
+          </div>
+        </div>
+
+
+    <!-- Question 4-->
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">Question 4</div>
+          <div class="panel-body">
+            <p><label> 4. Which class provides a full width container?
+                <p><input type="radio" name="q4" value="container"> .container</input></p>
+                <p><input type="radio" name="q4" value="fluid"> .container-fluid</input></p>
+                <p><input type="radio" name="q4" value="fixed"> .container-fixed</input></p>
+              </label></p>
+          </div>
+        </div>
+
+    <!-- Question 5-->
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-info">
+          <div class="panel-heading">Question 5</div>
+          <div class="panel-body">
+            <p><label> 5. What does CSS stand for?
+                <p><input type="radio" name="q5" value="cascading"> Cascading Style Sheets</input></p>
+                <p><input type="radio" name="q5" value="colorful"> Colorful Style Sheets</input></p>
+                <p><input type="radio" name="q5" value="creative"> Creative Style Sheets</input></p>
+              </label></p>
+          </div>
+          <!--Submit Button-->
+          <div class="panel-footer">
+            <p><button type="submit" class="btn btn-success" id="green">Submit</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+   </form>
+  </div>
+ </div>
+</div>
+</body>
 </html>
