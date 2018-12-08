@@ -1,6 +1,8 @@
 $(document).ready(function() {
   
   var total = 0;
+  $("#quiz").show();
+  $("#quiz-form-result").hide();
 
   /*
   
@@ -123,6 +125,9 @@ $(document).ready(function() {
       }
 
       alert(total);
+      $("#quiz").hide();
+      $("#score").text("Your score is: "+ total);
+      $("#quiz-form-result").show();
 
   }
 
