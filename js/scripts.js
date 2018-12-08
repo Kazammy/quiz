@@ -2,6 +2,8 @@ $(document).ready(function() {
   
     var total = 0;
   
+    // User interface (or front-end) logic: 
+
     $("form#quiz").submit(function(event) {
 
 		event.preventDefault();
