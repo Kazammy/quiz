@@ -14,60 +14,37 @@ $(document).ready(function() {
     }
 
     else{
-  
+
+        q1 = $("input[name='q1']:checked").val();
+        if (q1 === 'script') {
+            total += 10;
+        }
+
+        q2 = $("input[name='q2']:checked").val();
+        if (q2 === 'java-script') {
+            total += 10;
+        }
       
-      if ($("[name=q1]").is(':checked')){
-
-        if ($("[name=q1]").val() === 'script') {
-          total += 10;
-          }
-          console.log($("[name=q1]").val());
-          console.log(total);
-        }
-
-        if ($('[name="q2"]').is(':checked')){
-          
-          if ($('[name="q2"]').val() === 'java-script') {
+        q3 = $("input[name='q3']:checked").val();
+        if (q3 === 'html') {
             total += 10;
-          }
-          console.log($("[name=q2]").val());
-          console.log(total);
+        }
         
+        q4 = $("input[name='q4']:checked").val();
+        if (q4 === 'container') {
+            total += 10;
         }
 
-        if ($('[name="q3"]').is(':checked')){
-
-          if ($('[name="q3"]').val() === 'html') {
+        q5 = $("input[name='q5']:checked").val();
+        if (q5 === 'cascading') {
             total += 10;
-          }
-          console.log($("radio[name=q3]").val());
-          console.log(total);
+        }
         
-        }
-
-        if ($('[name="q4"]').is(':checked')){
-
-          if ($('[name="q4"]').val() === 'container') {
-            total += 10;
-          }
-          console.log($("radio[name=q4]").val());
-          console.log(total);
-        }
-
-        if ($('[name="q5"]').is(':checked')){
-
-          if ($('[name="q5"]').val() === 'cascading') {
-            total += 10;
-          }
-          console.log($('radio[name=q5]').val());
-          console.log(total);
-        }
-        alert(total);
         $("#quiz").hide();
         $("#score").text("Your score is: "+ total);
         $("#quiz-form-result").show();
      
-     }
+      }
 
   });
 
