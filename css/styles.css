@@ -8,4 +8,17 @@
 
 #margin{
   background: lightcoral;
+  border: 2px solid white;
+  padding: 15px;
+}
+
+.float{
+  float: right;
+  background: lightblue;
+  display: table-cell;
+  text-align: right;
+  width: 100%;
+  display: table;
+  margin: auto;
+
 }

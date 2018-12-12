@@ -4,39 +4,62 @@ $(document).ready(function() {
  
     // User interface (or front-end) logic: 
 
+    function notChecked(){
+        
+        if (!$('[name=varQuestion1]').is(':checked') || !$('[name=varQuestion2]').is(':checked') || !$('[name=varQuestion3]').is(':checked') || !$('[name=varQuestion4]').is(':checked') || !$('[name=varQuestion5]').is(':checked')){
+
+            return true;
+
+        }       
+
+    }
+
+    function checkAnswers(varQuestion, varAnswer){
+
+        if (varQuestion === varAnswer){
+            return true;
+        }
+    
+    }
+
+    // Business logic:
+
     $("form#quiz").submit(function(event) {
 
     event.preventDefault();
-   
-    if (!$('[name="q1"]').is(':checked') || !$('[name="q2"]').is(':checked') || !$('[name="q3"]').is(':checked') || !$('[name="q4"]').is(':checked') || !$('[name="q5"]').is(':checked')){
 
-      alert("Kindly answer all questions!");
+    var varQuestion1 = $("input[name='varQuestion1']:checked").val();
+    var varQuestion2 = $("input[name='varQuestion2']:checked").val();
+    var varQuestion3 = $("input[name='varQuestion3']:checked").val();
+    var varQuestion4 = $("input[name='varQuestion4']:checked").val();
+    var varQuestion5 = $("input[name='varQuestion5']:checked").val();
+
+   
+    if(notChecked())
+    {
+        alert("Kindly answer all questions!");
     }
 
     else{
 
-        var q1 = $("input[name='q1']:checked").val();
-        if (q1 === 'script') {
+        
+        if (checkAnswers(varQuestion1, "script")) {
             total += 10;
         }
 
-        var q2 = $("input[name='q2']:checked").val();
-        if (q2 === 'java-script') {
+        if (checkAnswers(varQuestion2, "java-script")) {
             total += 10;
         }
       
-        var q3 = $("input[name='q3']:checked").val();
-        if (q3 === 'html') {
+        if (checkAnswers(varQuestion3, "html")) {
             total += 10;
         }
         
-        var q4 = $("input[name='q4']:checked").val();
-        if (q4 === 'container') {
+        if (checkAnswers(varQuestion4, "container")) {
             total += 10;
         }
 
-        var q5 = $("input[name='q5']:checked").val();
-        if (q5 === 'cascading') {
+        if (checkAnswers(varQuestion5, "cascading")) {
             total += 10;
         }
         
