@@ -1,8 +1,7 @@
-$(document).ready(function() {
-  
-    var total = 0;
+
+
+    // Business logic:
  
-    // User interface (or front-end) logic: 
 
     function notChecked(){
         
@@ -22,8 +21,12 @@ $(document).ready(function() {
     
     }
 
-    // Business logic:
+    // User interface (or front-end) logic: 
 
+$(document).ready(function() {
+  
+    var total = 0;
+ 
     $("form#quiz").submit(function(event) {
 
     event.preventDefault();
